@@ -61,6 +61,12 @@ def overview():
     pass
 
 
+@app.route('/widget')
+@decorators.templated()
+def widget():
+    pass
+
+
 @app.errorhandler(404)
 @decorators.templated('404.html', 404)
 def page_not_found(e):
